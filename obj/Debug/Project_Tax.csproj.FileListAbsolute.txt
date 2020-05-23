@@ -1,0 +1,15 @@
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\bin\Debug\Project_Tax.exe.config
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\bin\Debug\Project_Tax.exe
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\bin\Debug\Project_Tax.pdb
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.csprojAssemblyReference.cache
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.Form1.resources
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.group1.resources
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.Properties.Resources.resources
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.csproj.GenerateResource.cache
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.csproj.CoreCompileInputs.cache
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.exe
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.pdb
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.group2.resources
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.group3.resources
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.group4.resources
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.group5.resources
