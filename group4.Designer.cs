@@ -29,20 +29,17 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.sum = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.allsal = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.other = new System.Windows.Forms.TextBox();
-            this.bonus = new System.Windows.Forms.TextBox();
-            this.salary = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.l1 = new System.Windows.Forms.NumericUpDown();
+            this.pb1 = new System.Windows.Forms.NumericUpDown();
+            this.st1 = new System.Windows.Forms.NumericUpDown();
+            this.sp1 = new System.Windows.Forms.NumericUpDown();
+            this.hp1 = new System.Windows.Forms.NumericUpDown();
+            this.ed1 = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.k1 = new System.Windows.Forms.NumericUpDown();
             this.label42 = new System.Windows.Forms.Label();
@@ -63,9 +60,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.label44 = new System.Windows.Forms.Label();
-            this.allpay = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.suti = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
@@ -73,21 +67,15 @@
             this.alltax = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.label25 = new System.Windows.Forms.Label();
-            this.ed1 = new System.Windows.Forms.NumericUpDown();
-            this.hp1 = new System.Windows.Forms.NumericUpDown();
-            this.sp1 = new System.Windows.Forms.NumericUpDown();
-            this.st1 = new System.Windows.Forms.NumericUpDown();
-            this.pb1 = new System.Windows.Forms.NumericUpDown();
-            this.l1 = new System.Windows.Forms.NumericUpDown();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.k1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ed1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hp1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.st1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.l1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.st1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hp1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ed1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.k1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -100,21 +88,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "กลุ่มเงินบริจาค";
             // 
-            // sum
-            // 
-            this.sum.Location = new System.Drawing.Point(112, 171);
-            this.sum.Name = "sum";
-            this.sum.Size = new System.Drawing.Size(100, 31);
-            this.sum.TabIndex = 55;
-            this.sum.Text = "คำนวณ";
-            this.sum.UseVisualStyleBackColor = true;
-            this.sum.Click += new System.EventHandler(this.sum_Click);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label9.Location = new System.Drawing.Point(248, 220);
+            this.label9.Location = new System.Drawing.Point(259, 61);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 20);
             this.label9.TabIndex = 54;
@@ -123,8 +101,9 @@
             // allsal
             // 
             this.allsal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.allsal.Location = new System.Drawing.Point(112, 217);
+            this.allsal.Location = new System.Drawing.Point(123, 58);
             this.allsal.Name = "allsal";
+            this.allsal.ReadOnly = true;
             this.allsal.Size = new System.Drawing.Size(100, 26);
             this.allsal.TabIndex = 53;
             // 
@@ -132,95 +111,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label8.Location = new System.Drawing.Point(15, 220);
+            this.label8.Location = new System.Drawing.Point(26, 61);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 20);
             this.label8.TabIndex = 52;
             this.label8.Text = "รายได้รวม";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.Location = new System.Drawing.Point(227, 134);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 20);
-            this.label7.TabIndex = 51;
-            this.label7.Text = "บาท";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(227, 96);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 20);
-            this.label6.TabIndex = 50;
-            this.label6.Text = "บาท";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(220, 61);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 20);
-            this.label5.TabIndex = 49;
-            this.label5.Text = "บาท / เดือน";
-            // 
-            // other
-            // 
-            this.other.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.other.Location = new System.Drawing.Point(112, 131);
-            this.other.Name = "other";
-            this.other.Size = new System.Drawing.Size(100, 26);
-            this.other.TabIndex = 48;
-            // 
-            // bonus
-            // 
-            this.bonus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bonus.Location = new System.Drawing.Point(112, 93);
-            this.bonus.Name = "bonus";
-            this.bonus.Size = new System.Drawing.Size(100, 26);
-            this.bonus.TabIndex = 47;
-            // 
-            // salary
-            // 
-            this.salary.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.salary.Location = new System.Drawing.Point(112, 61);
-            this.salary.Name = "salary";
-            this.salary.Size = new System.Drawing.Size(100, 26);
-            this.salary.TabIndex = 46;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(14, 134);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 20);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "รายได้อื่นๆ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(15, 96);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 20);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "โบนัส";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(14, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "เงินเดือน";
             // 
             // groupBox1
             // 
@@ -257,7 +152,88 @@
             this.groupBox1.TabIndex = 56;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "การบริจาค";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // l1
+            // 
+            this.l1.Location = new System.Drawing.Point(156, 299);
+            this.l1.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.l1.Name = "l1";
+            this.l1.Size = new System.Drawing.Size(100, 26);
+            this.l1.TabIndex = 32;
+            // 
+            // pb1
+            // 
+            this.pb1.Location = new System.Drawing.Point(156, 241);
+            this.pb1.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(100, 26);
+            this.pb1.TabIndex = 31;
+            // 
+            // st1
+            // 
+            this.st1.Location = new System.Drawing.Point(156, 167);
+            this.st1.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.st1.Name = "st1";
+            this.st1.Size = new System.Drawing.Size(100, 26);
+            this.st1.TabIndex = 30;
+            // 
+            // sp1
+            // 
+            this.sp1.Location = new System.Drawing.Point(156, 122);
+            this.sp1.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.sp1.Name = "sp1";
+            this.sp1.Size = new System.Drawing.Size(100, 26);
+            this.sp1.TabIndex = 29;
+            // 
+            // hp1
+            // 
+            this.hp1.Location = new System.Drawing.Point(156, 62);
+            this.hp1.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.hp1.Name = "hp1";
+            this.hp1.Size = new System.Drawing.Size(100, 26);
+            this.hp1.TabIndex = 28;
+            // 
+            // ed1
+            // 
+            this.ed1.Location = new System.Drawing.Point(156, 20);
+            this.ed1.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.ed1.Name = "ed1";
+            this.ed1.Size = new System.Drawing.Size(100, 26);
+            this.ed1.TabIndex = 27;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(12, 214);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(134, 20);
+            this.label25.TabIndex = 26;
+            this.label25.Text = "*ลดหย่อนได้ 2 เท่า";
             // 
             // label24
             // 
@@ -440,7 +416,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(760, 170);
+            this.button3.Location = new System.Drawing.Point(133, 201);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 34);
             this.button3.TabIndex = 67;
@@ -448,39 +424,11 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label44.Location = new System.Drawing.Point(891, 136);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(43, 25);
-            this.label44.TabIndex = 66;
-            this.label44.Text = "บาท";
-            // 
-            // allpay
-            // 
-            this.allpay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.allpay.Location = new System.Drawing.Point(760, 133);
-            this.allpay.Name = "allpay";
-            this.allpay.Size = new System.Drawing.Size(100, 30);
-            this.allpay.TabIndex = 65;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label45.Location = new System.Drawing.Point(636, 136);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(109, 25);
-            this.label45.TabIndex = 64;
-            this.label45.Text = "ภาษีที่ต้องจ่าย";
-            // 
             // label46
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label46.Location = new System.Drawing.Point(891, 96);
+            this.label46.Location = new System.Drawing.Point(264, 168);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(43, 25);
             this.label46.TabIndex = 63;
@@ -489,8 +437,9 @@
             // suti
             // 
             this.suti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.suti.Location = new System.Drawing.Point(760, 93);
+            this.suti.Location = new System.Drawing.Point(133, 165);
             this.suti.Name = "suti";
+            this.suti.ReadOnly = true;
             this.suti.Size = new System.Drawing.Size(100, 30);
             this.suti.TabIndex = 62;
             // 
@@ -498,7 +447,7 @@
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label47.Location = new System.Drawing.Point(636, 96);
+            this.label47.Location = new System.Drawing.Point(9, 168);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(89, 25);
             this.label47.TabIndex = 61;
@@ -508,7 +457,7 @@
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label48.Location = new System.Drawing.Point(891, 57);
+            this.label48.Location = new System.Drawing.Point(264, 129);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(43, 25);
             this.label48.TabIndex = 60;
@@ -517,8 +466,9 @@
             // alltax
             // 
             this.alltax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.alltax.Location = new System.Drawing.Point(760, 54);
+            this.alltax.Location = new System.Drawing.Point(133, 126);
             this.alltax.Name = "alltax";
+            this.alltax.ReadOnly = true;
             this.alltax.Size = new System.Drawing.Size(100, 30);
             this.alltax.TabIndex = 59;
             // 
@@ -526,7 +476,7 @@
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label49.Location = new System.Drawing.Point(636, 57);
+            this.label49.Location = new System.Drawing.Point(9, 129);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(96, 25);
             this.label49.TabIndex = 58;
@@ -535,7 +485,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button2.Location = new System.Drawing.Point(809, 377);
+            this.button2.Location = new System.Drawing.Point(19, 377);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 52);
             this.button2.TabIndex = 68;
@@ -543,98 +493,26 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label25
+            // button1
             // 
-            this.label25.AutoSize = true;
-            this.label25.ForeColor = System.Drawing.Color.Red;
-            this.label25.Location = new System.Drawing.Point(12, 214);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(134, 20);
-            this.label25.TabIndex = 26;
-            this.label25.Text = "*ลดหย่อนได้ 2 เท่า";
-            // 
-            // ed1
-            // 
-            this.ed1.Location = new System.Drawing.Point(156, 20);
-            this.ed1.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.ed1.Name = "ed1";
-            this.ed1.Size = new System.Drawing.Size(100, 26);
-            this.ed1.TabIndex = 27;
-            // 
-            // hp1
-            // 
-            this.hp1.Location = new System.Drawing.Point(156, 62);
-            this.hp1.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.hp1.Name = "hp1";
-            this.hp1.Size = new System.Drawing.Size(100, 26);
-            this.hp1.TabIndex = 28;
-            // 
-            // sp1
-            // 
-            this.sp1.Location = new System.Drawing.Point(156, 122);
-            this.sp1.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.sp1.Name = "sp1";
-            this.sp1.Size = new System.Drawing.Size(100, 26);
-            this.sp1.TabIndex = 29;
-            // 
-            // st1
-            // 
-            this.st1.Location = new System.Drawing.Point(156, 167);
-            this.st1.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.st1.Name = "st1";
-            this.st1.Size = new System.Drawing.Size(100, 26);
-            this.st1.TabIndex = 30;
-            // 
-            // pb1
-            // 
-            this.pb1.Location = new System.Drawing.Point(156, 241);
-            this.pb1.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(100, 26);
-            this.pb1.TabIndex = 31;
-            // 
-            // l1
-            // 
-            this.l1.Location = new System.Drawing.Point(156, 299);
-            this.l1.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.l1.Name = "l1";
-            this.l1.Size = new System.Drawing.Size(100, 26);
-            this.l1.TabIndex = 32;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Location = new System.Drawing.Point(182, 377);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 52);
+            this.button1.TabIndex = 69;
+            this.button1.Text = "ถัดไป";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // group4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 450);
+            this.BackColor = System.Drawing.Color.Bisque;
+            this.ClientSize = new System.Drawing.Size(637, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label44);
-            this.Controls.Add(this.allpay);
-            this.Controls.Add(this.label45);
             this.Controls.Add(this.label46);
             this.Controls.Add(this.suti);
             this.Controls.Add(this.label47);
@@ -642,32 +520,21 @@
             this.Controls.Add(this.alltax);
             this.Controls.Add(this.label49);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.sum);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.allsal);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.other);
-            this.Controls.Add(this.bonus);
-            this.Controls.Add(this.salary);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "group4";
             this.Text = "group4";
-            this.Load += new System.EventHandler(this.group4_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.k1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ed1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hp1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.st1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.l1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.st1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hp1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ed1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.k1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -676,19 +543,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button sum;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox allsal;
+        public System.Windows.Forms.TextBox allsal;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox other;
-        private System.Windows.Forms.TextBox bonus;
-        private System.Windows.Forms.TextBox salary;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
@@ -708,11 +565,8 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox allpay;
-        private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox suti;
+        public System.Windows.Forms.TextBox suti;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TextBox alltax;
@@ -727,5 +581,6 @@
         private System.Windows.Forms.NumericUpDown sp1;
         private System.Windows.Forms.NumericUpDown hp1;
         private System.Windows.Forms.NumericUpDown ed1;
+        private System.Windows.Forms.Button button1;
     }
 }

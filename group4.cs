@@ -17,30 +17,10 @@ namespace Project_Tax
             InitializeComponent();
         }
 
-        private void group4_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sum_Click(object sender, EventArgs e)
-        {
-            int sal = int.Parse(salary.Text);
-            int bos = int.Parse(bonus.Text);
-            int oth = int.Parse(other.Text);
-            int outcome;
-
-            outcome = (sal * 12) + bos + oth;
-            allsal.Text = outcome.ToString();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            group3 f1 = new group3();
+            f1.suti.Text = allsal.Text;
             f1.Show();
             this.Hide();
         }
@@ -75,43 +55,14 @@ namespace Project_Tax
 
             outcome3 = all - i;
             suti.Text = outcome3.ToString();
+        }
 
-            int a = int.Parse(suti.Text);
-            if (a > 5000000)
-            {
-                a = (a * 35 / 100);
-            }
-            else if (a > 2000000)
-            {
-                a = (a * 30 / 100);
-            }
-            else if (a > 1000000)
-            {
-                a = (a * 25 / 100);
-            }
-            else if (a > 750000)
-            {
-                a = (a * 20 / 100);
-            }
-            else if (a > 500000)
-            {
-                a = (a * 15 / 100);
-            }
-            else if (a > 300000)
-            {
-                a = (a * 10 / 100);
-            }
-            else if (a > 150000)
-            {
-                a = (a * 5 / 100);
-            }
-            else
-            {
-                a = (0);
-            }
-
-            allpay.Text = a.ToString();
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            group5 g5 = new group5();
+            g5.allsal.Text = suti.Text;
+            g5.Show();
+            this.Hide();
         }
     }
 }

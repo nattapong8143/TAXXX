@@ -19,18 +19,13 @@ namespace Project_Tax
 
         private void sum_Click(object sender, EventArgs e)
         {
-            int sal = int.Parse(salary.Text);
-            int bos = int.Parse(bonus.Text);
-            int oth = int.Parse(other.Text);
-            int outcome;
-
-            outcome = (sal * 12) + bos + oth;
-            allsal.Text = outcome.ToString();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            group4 f1 = new group4();
+            f1.suti.Text = allsal.Text;
             f1.Show();
             this.Hide();
         }
@@ -58,7 +53,7 @@ namespace Project_Tax
             {
                 tt2 = 20000;
             }
-            else if(tt < 2000)
+            else if(tt < 20000)
             {
                 tt2 = ct + lg;
             }
@@ -68,42 +63,20 @@ namespace Project_Tax
 
             out2 = all - out1;
             suti.Text = out2.ToString();
+        }
 
-            int a = int.Parse(suti.Text);
-            if (a > 5000000)
-            {
-                a = (a * 35 / 100);
-            }
-            else if (a > 2000000)
-            {
-                a = (a * 30 / 100);
-            }
-            else if (a > 1000000)
-            {
-                a = (a * 25 / 100);
-            }
-            else if (a > 750000)
-            {
-                a = (a * 20 / 100);
-            }
-            else if (a > 500000)
-            {
-                a = (a * 15 / 100);
-            }
-            else if (a > 300000)
-            {
-                a = (a * 10 / 100);
-            }
-            else if (a > 150000)
-            {
-                a = (a * 5 / 100);
-            }
-            else
-            {
-                a = (0);
-            }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            sum sm = new sum();
+            sm.all.Text = suti.Text;
+            sm.Show();
+            this.Hide();
+        }
 
-            allpay.Text = a.ToString();
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            city ct = new city();
+            ct.Show();
         }
     }
 }

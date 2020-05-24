@@ -17,16 +17,6 @@ namespace Project_Tax
             InitializeComponent();
         }
 
-        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox6_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void radioButton15_CheckedChanged(object sender, EventArgs e)
         {
             if (ddie.Checked)
@@ -35,20 +25,10 @@ namespace Project_Tax
             }
         }
 
-        private void sum_Click(object sender, EventArgs e)
-        {
-            int sal = int.Parse(salary.Text);
-            int bos = int.Parse(bonus.Text);
-            int oth = int.Parse(other.Text);
-            int outcome;
-
-            outcome = (sal * 12) + bos + oth;
-            allsal.Text = outcome.ToString();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            group1 f1 = new group1();
+            f1.suti.Text = allsal.Text;
             f1.Show();
             this.Hide();
         }
@@ -115,11 +95,6 @@ namespace Project_Tax
             {
                 nummar.Enabled = true;
             }
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-            
         }
 
         private void nomarried_CheckedChanged(object sender, EventArgs e)
@@ -194,53 +169,23 @@ namespace Project_Tax
 
             outcome2 = all - outcome1;
             suti.Text = outcome2.ToString();
-
-            int a = int.Parse(suti.Text);
-            if (a > 5000000)
-            {
-                a = (a * 35 / 100);
-            }
-            else if (a > 2000000)
-            {
-                a = (a * 30 / 100);
-            }
-            else if (a > 1000000)
-            {
-                a = (a * 25 / 100);
-            }
-            else if (a > 750000)
-            {
-                a = (a * 20 / 100);
-            }
-            else if (a > 500000)
-            {
-                a = (a * 15 / 100);
-            }
-            else if (a > 300000)
-            {
-                a = (a * 10 / 100);
-            }
-            else if (a > 150000)
-            {
-                a = (a * 5 / 100);
-            }
-            else
-            {
-                a = (0);
-            }
-
-            allpay.Text = a.ToString();
-
-        }
-
-        private void numsoc_ValueChanged(object sender, EventArgs e)
-        {
-           
         }
 
         private void group2_Load(object sender, EventArgs e)
         {
+            numsoc.Enabled = false;
+            nummar.Enabled = false;
+            numlife.Enabled = false;
+            numdm.Enabled = false;
+            numhealth.Enabled = false;
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            group3 g3 = new group3();
+            g3.allsal.Text = suti.Text;
+            g3.Show();
+            this.Hide();
         }
     }
 }

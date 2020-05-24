@@ -16,27 +16,31 @@ namespace Project_Tax
         {
             InitializeComponent();
         }
-        private void sum_Click(object sender, EventArgs e)
-        {
-            int sal = int.Parse(salary.Text);
-            int bos = int.Parse(bonus.Text);
-            int oth = int.Parse(other.Text);
-            int outcome;
-
-            outcome = (sal * 12) + bos + oth;
-            allsal.Text = outcome.ToString();
-        }
-
+  
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             box58.Enabled = true;
             box62.Enabled = false;
+            int a, b;
+            
+            a = 0;
+            ban62.Text = a.ToString();
+            b = 0;
+            numban62.Text = b.ToString();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             box62.Enabled = true;
             box58.Enabled = false;
+            int a, b, c;
+
+            a = 0;
+            ban58.Text = a.ToString();
+            b = 0;
+            yiban.Text = b.ToString();
+            c = 0;
+            siban.Text = c.ToString();
         }
 
         private void group3_Load(object sender, EventArgs e)
@@ -84,47 +88,6 @@ namespace Project_Tax
             outcome2 = asl - ot1;
             suti.Text = outcome2.ToString();
 
-            int a = int.Parse(suti.Text);
-            if (a > 5000000)
-            {
-                a = (a * 35 / 100);
-            }
-            else if (a > 2000000)
-            {
-                a = (a * 30 / 100);
-            }
-            else if (a > 1000000)
-            {
-                a = (a * 25 / 100);
-            }
-            else if (a > 750000)
-            {
-                a = (a * 20 / 100);
-            }
-            else if (a > 500000)
-            {
-                a = (a * 15 / 100);
-            }
-            else if (a > 300000)
-            {
-                a = (a * 10 / 100);
-            }
-            else if (a > 150000)
-            {
-                a = (a * 5 / 100);
-            }
-            else
-            {
-                a = (0);
-            }
-
-            allpay.Text = a.ToString();
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void button4_Click_1(object sender, EventArgs e)
@@ -140,8 +103,17 @@ namespace Project_Tax
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
+            group2 g2 = new group2();
+            g2.suti.Text = allsal.Text;
+            g2.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            group4 g4 = new group4();
+            g4.allsal.Text = suti.Text;
+            g4.Show();
             this.Hide();
         }
     }

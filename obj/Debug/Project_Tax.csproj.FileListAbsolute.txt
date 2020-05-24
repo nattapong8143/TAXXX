@@ -13,3 +13,5 @@ C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.group2.r
 C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.group3.resources
 C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.group4.resources
 C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.group5.resources
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.sum.resources
+C:\Users\GUY\source\repos\Project_Tax\Project_Tax\obj\Debug\Project_Tax.city.resources

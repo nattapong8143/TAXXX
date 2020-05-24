@@ -20,50 +20,9 @@ namespace Project_Tax
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
+            f1.allsal.Text = allsal1.Text;
             f1.Show();
             this.Hide();
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void group1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sun_Click(object sender, EventArgs e)
-        {
-            int sal = int.Parse(salary.Text);
-            int bos = int.Parse(bonus.Text);
-            int oth = int.Parse(other.Text);
-            int all;
-
-            all = (sal * 12) + bos + oth;
-            allsal.Text = all.ToString();
-
         }
 
         private void single_CheckedChanged(object sender, EventArgs e)
@@ -98,12 +57,15 @@ namespace Project_Tax
         private void son_CheckedChanged(object sender, EventArgs e)
         {
             kunbox.Enabled = true;
-            boxnumson.Enabled = true;
+            boxnumson.Enabled = true; 
+            kunson.Enabled = true;
+            numson.Enabled = true;
+            numson2.Enabled = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int asl = int.Parse(allsal.Text);
+            int asl = int.Parse(allsal1.Text);
             int ks = int.Parse(kunson.Text);
             int bb1 = int.Parse(numson.Text);
             int bb2 = int.Parse(numson2.Text);
@@ -144,41 +106,6 @@ namespace Project_Tax
             outcome2 = asl - outcome1;
             suti.Text = outcome2.ToString();
 
-            int a = int.Parse(suti.Text);
-            if (a > 5000000)
-            {
-                a = (a * 35 / 100);
-            }
-            else if (a > 2000000)
-            {
-                a = (a * 30 / 100);
-            }
-            else if (a > 1000000)
-            {
-                a = (a * 25 / 100);
-            }
-            else if (a > 750000)
-            {
-                a = (a * 20 / 100);
-            }
-            else if (a > 500000)
-            {
-                a = (a * 15 / 100);
-            }
-            else if (a > 300000)
-            {
-                a = (a * 10 / 100);
-            }
-            else if (a > 150000)
-            {
-                a = (a * 5 / 100);
-            }
-            else
-            {
-                a = (0);
-            }
-
-            allpay.Text = a.ToString();
         }
 
         private void notpk_CheckedChanged(object sender, EventArgs e)
@@ -197,12 +124,23 @@ namespace Project_Tax
             }
         }
 
-        private void mhav_CheckedChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            group2 g2 = new group2();
+            g2.allsal.Text = suti.Text;
+            g2.Show();
+            this.Hide();
         }
 
-        private void mnot_CheckedChanged(object sender, EventArgs e)
+        private void group1_Load(object sender, EventArgs e)
+        {
+            kunson.Enabled = false;
+            numpikan.Enabled = false;
+            numson.Enabled = false;
+            numson2.Enabled = false;
+        }
+
+        private void mhav_CheckedChanged(object sender, EventArgs e)
         {
 
         }
